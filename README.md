@@ -21,8 +21,9 @@ Usage
 1. Receiver scans the QR code on the sender's screen.
 1. Get the files.
 
-TODO
+TODOs
 ---
  * [ ] Add command-line interfaces.
  * [ ] Show QR code in the terminal.
+ * [ ] Add Travis CI and release standalone executables.
  * [ ] Add 2-way communication, based on the HTML5 FileSystem API and WebSocket. (maybe)
