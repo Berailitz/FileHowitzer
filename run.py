@@ -66,9 +66,7 @@ class FileHowitzer(object):
         logging.warning(f'URL is `{url}`.')
         qr = qrcode.QRCode()
         qr.add_data(url)
-        qr.make()
-        img = qr.make_image()
-        img.show()
+        qr.print_ascii()
 
     def run(self):
         server_address = (str(self.ip), self.port)
