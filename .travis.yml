@@ -1,0 +1,25 @@
+os: windows
+language: shell
+
+env:
+  - PATH=/c/Python38:/c/Python38/Scripts:$PATH
+
+before_install:
+  - choco install python --version 3.8.0
+
+install:
+  - pip install -r requirements.txt
+  - pip install https://github.com/pyinstaller/pyinstaller/archive/develop.tar.gz # since pyinstaller 3.5 does not support Python 3.8
+
+script:
+  - pyinstaller --onefile file_howitzer.py
+  - sleep 1  # Finish writing to stdout
+  - ls -l dist
+
+deploy:
+  provider: releases
+  api_key: $GH_TOKEN
+  file: dist/file_howitzer.exe
+  skip_cleanup: true
+  on:
+    tags: true
