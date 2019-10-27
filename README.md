@@ -26,7 +26,7 @@ TODOs
  * [x] Add command-line interfaces.
  * [x] IPv6 support.
  * [x] Show QR code in the (ASCII) terminal.
+ * [x] Add Travis CI and release standalone executables.
  * [ ] Dual stack support.
  * [ ] SSL support.
- * [ ] Add Travis CI and release standalone executables.
  * [ ] Add 2-way communication, based on the HTML5 FileSystem API and WebSocket. (maybe)
