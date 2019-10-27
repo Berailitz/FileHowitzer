@@ -17,7 +17,7 @@ Usage
 ---
 1. Make sure the sender and the receiver are in the same network.
 1. Make sure the dependencies are installed.
-1. Sender executes `python3.6 run.py`.
+1. Sender executes `python3.8 run.py`.
 1. Receiver scans the QR code on the sender's screen.
 1. Get the files.
 
@@ -25,5 +25,7 @@ TODOs
 ---
  * [ ] Add command-line interfaces.
  * [ ] Show QR code in the terminal.
+ * [ ] Dual stack/IPv6 support.
+ * [ ] SSL support.
  * [ ] Add Travis CI and release standalone executables.
  * [ ] Add 2-way communication, based on the HTML5 FileSystem API and WebSocket. (maybe)
