@@ -23,9 +23,10 @@ Usage
 
 TODOs
 ---
- * [ ] Add command-line interfaces.
+ * [x] Add command-line interfaces.
+ * [x] IPv6 support.
  * [ ] Show QR code in the terminal.
- * [ ] Dual stack/IPv6 support.
+ * [ ] Dual stack support.
  * [ ] SSL support.
  * [ ] Add Travis CI and release standalone executables.
  * [ ] Add 2-way communication, based on the HTML5 FileSystem API and WebSocket. (maybe)
