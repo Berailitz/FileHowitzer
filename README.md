@@ -17,7 +17,7 @@ Usage
 ---
 1. Make sure the sender and the receiver are in the same network.
 1. Make sure the dependencies are installed.
-1. Sender executes `python3.8 run.py`.
+1. Sender executes `python3.8 file_howitzer.py`.
 1. Receiver scans the QR code on the sender's screen.
 1. Get the files.
 
