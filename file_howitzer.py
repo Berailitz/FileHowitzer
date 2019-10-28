@@ -111,8 +111,7 @@ def main():
                 args.ip = IPv4Address('0.0.0.0')
             args.host = get_ip()
         else:
-            host_ip = ip_constructor(args.host)
-            if isinstance(host_ip, IPv4Address):
+            if isinstance(args.host, IPv4Address):
                 # Host is an IPv4 address
                 args.ip = get_ip(force_v4=True)
             else:
